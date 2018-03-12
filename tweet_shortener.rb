@@ -17,7 +17,6 @@ end
 def word_substituter(string)
   array = string.split(" ")
   array.map do |element|
-<<<<<<< HEAD
     dictionary.keys.include?(element.downcase) ? element = dictionary[element.downcase] : element = element
   end.join(" ")
 
@@ -42,9 +41,7 @@ def shortened_tweet_truncator(string)
   else
     string
 end
-=======
     dictionary.keys.include?(element) ? element = dictionary[element] : element = element
   end.join(" ")
 
->>>>>>> 56b098d8fcfd7f9efa9827913a320383d147ee81
 end
