@@ -17,7 +17,6 @@ end
 def word_substituter(string)
   array = string.split(" ")
   array.map do |element|
-<<<<<<< HEAD
     dictionary.keys.include?(element.downcase) ? element = dictionary[element.downcase] : element = element
   end.join(" ")
 
@@ -32,7 +31,7 @@ def bulk_tweet_shortener(array)
 end
 
 def selective_tweet_shortener(string)
-string.length > 140 ? word_substituter(string) : string
+  string.length > 140 ? word_substituter(string) : string
 end
 
 
@@ -41,10 +40,10 @@ def shortened_tweet_truncator(string)
     "#{word_substituter(string)[0..135]} ..."
   else
     string
-end
-=======
-    dictionary.keys.include?(element) ? element = dictionary[element] : element = element
+  end
+
+
+dictionary.keys.include?(element) ? element = dictionary[element] : element = element
   end.join(" ")
 
->>>>>>> 56b098d8fcfd7f9efa9827913a320383d147ee81
 end
